@@ -19,8 +19,6 @@ class deeplabv3plus(nn.Module):
 		input_channel = 2048
 		self.aspp = ASPP(dim_in=input_channel,
 				dim_out=cfg.MODEL_ASPP_OUTDIM,
-                height_in = 512,
-                width_in = 512,
 				rate=16//cfg.MODEL_OUTPUT_STRIDE,
 				bn_mom = cfg.TRAIN_BN_MOM)
 		self.dropout1 = nn.Dropout(0.5)
