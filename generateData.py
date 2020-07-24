@@ -1,7 +1,3 @@
-# ----------------------------------------
-# Written by Yude Wang
-# ----------------------------------------
-
 import torch
 import torch.nn as nn
 from datasets.VOCDataset import VOCDataset
